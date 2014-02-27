@@ -1,0 +1,606 @@
+*** NOTE: no connection pattern specified.
+*** NOTE: no scenario file specified.
+Starting Simulation...
+num_nodes is set 3
+channel.cc:sendUp - Calc highestAntennaZ_ and distCST_
+highestAntennaZ_ = 1.5,  distCST_ = 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.0
+---------request a new segment------------
+ask for segment, bitrate: 50
+receive seq number: 1, bytes: 6
+recvive time: 2.055612
+bytes: 6 and interval: 0.021830
+the throughput: 2198.830955
+---------request a new segment------------
+ask for segment, bitrate: 2000
+receive seq number: 2, bytes: 250
+recvive time: 2.074059
+bytes: 250 and interval: 0.018447
+the throughput: 108419.603579
+---------request a new segment------------
+ask for segment, bitrate: 100000
+receive seq number: 3, bytes: 12500
+recvive time: 2.226734
+bytes: 12500 and interval: 0.152675
+the throughput: 654987.427594
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 4, bytes: 62500
+recvive time: 2.859056
+bytes: 62500 and interval: 0.632323
+the throughput: 790735.692548
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 5, bytes: 62500
+recvive time: 3.485696
+bytes: 62500 and interval: 0.626640
+the throughput: 797906.639377
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 6, bytes: 62500
+recvive time: 4.115892
+bytes: 62500 and interval: 0.630196
+the throughput: 793403.956864
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 7, bytes: 62500
+recvive time: 4.741722
+bytes: 62500 and interval: 0.625830
+the throughput: 798938.507869
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 8, bytes: 62500
+recvive time: 5.367717
+bytes: 62500 and interval: 0.625995
+the throughput: 798728.695001
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 9, bytes: 62500
+recvive time: 5.994272
+bytes: 62500 and interval: 0.626555
+the throughput: 798014.809994
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 10, bytes: 62500
+recvive time: 6.628007
+bytes: 62500 and interval: 0.633735
+the throughput: 788973.669469
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 11, bytes: 62500
+recvive time: 7.259336
+bytes: 62500 and interval: 0.631330
+the throughput: 791979.349460
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 12, bytes: 62500
+recvive time: 7.886431
+bytes: 62500 and interval: 0.627095
+the throughput: 797327.628398
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 13, bytes: 62500
+recvive time: 8.516032
+bytes: 62500 and interval: 0.629601
+the throughput: 794153.832387
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 14, bytes: 62500
+recvive time: 9.145942
+bytes: 62500 and interval: 0.629910
+the throughput: 793763.693878
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 15, bytes: 62500
+recvive time: 9.779777
+bytes: 62500 and interval: 0.633835
+the throughput: 788849.096897
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 16, bytes: 62500
+recvive time: 10.619096
+bytes: 62500 and interval: 0.839319
+the throughput: 595720.990283
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 17, bytes: 62500
+recvive time: 11.455902
+bytes: 62500 and interval: 0.836805
+the throughput: 597510.462879
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 18, bytes: 62500
+recvive time: 12.083592
+bytes: 62500 and interval: 0.627690
+the throughput: 796571.177385
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 19, bytes: 62500
+recvive time: 12.713496
+bytes: 62500 and interval: 0.629904
+the throughput: 793771.611875
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 20, bytes: 62500
+recvive time: 13.348027
+bytes: 62500 and interval: 0.634531
+the throughput: 787984.100181
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 21, bytes: 62500
+recvive time: 13.978876
+bytes: 62500 and interval: 0.630850
+the throughput: 792581.949656
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 22, bytes: 62500
+recvive time: 14.605171
+bytes: 62500 and interval: 0.626295
+the throughput: 798346.097839
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 23, bytes: 62500
+recvive time: 15.247121
+bytes: 62500 and interval: 0.641950
+the throughput: 778876.541686
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 24, bytes: 62500
+recvive time: 15.875392
+bytes: 62500 and interval: 0.628271
+the throughput: 795835.325253
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 25, bytes: 62500
+recvive time: 16.505002
+bytes: 62500 and interval: 0.629610
+the throughput: 794141.910488
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 26, bytes: 62500
+recvive time: 17.140077
+bytes: 62500 and interval: 0.635075
+the throughput: 787308.848569
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 27, bytes: 62500
+recvive time: 17.774832
+bytes: 62500 and interval: 0.634755
+the throughput: 787705.755904
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 28, bytes: 62500
+recvive time: 18.400727
+bytes: 62500 and interval: 0.625895
+the throughput: 798856.308892
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 29, bytes: 62500
+recvive time: 19.028527
+bytes: 62500 and interval: 0.627800
+the throughput: 796432.082893
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 30, bytes: 62500
+recvive time: 19.659056
+bytes: 62500 and interval: 0.630530
+the throughput: 792984.192829
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 31, bytes: 62500
+recvive time: 20.285011
+bytes: 62500 and interval: 0.625955
+the throughput: 798779.735665
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 32, bytes: 62500
+recvive time: 20.916492
+bytes: 62500 and interval: 0.631481
+the throughput: 791789.534260
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 33, bytes: 62500
+recvive time: 21.549752
+bytes: 62500 and interval: 0.633260
+the throughput: 789565.464432
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 34, bytes: 62500
+recvive time: 22.183646
+bytes: 62500 and interval: 0.633895
+the throughput: 788774.430017
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 35, bytes: 62500
+recvive time: 22.809761
+bytes: 62500 and interval: 0.626115
+the throughput: 798575.612139
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 36, bytes: 62500
+recvive time: 23.443936
+bytes: 62500 and interval: 0.634175
+the throughput: 788426.171391
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 37, bytes: 62500
+recvive time: 24.070711
+bytes: 62500 and interval: 0.626775
+the throughput: 797734.704186
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 38, bytes: 62500
+recvive time: 24.698956
+bytes: 62500 and interval: 0.628245
+the throughput: 795867.339701
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 39, bytes: 62500
+recvive time: 25.325191
+bytes: 62500 and interval: 0.626235
+the throughput: 798422.587946
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 40, bytes: 62500
+recvive time: 25.956092
+bytes: 62500 and interval: 0.630901
+the throughput: 792517.442400
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 41, bytes: 62500
+recvive time: 26.585882
+bytes: 62500 and interval: 0.629790
+the throughput: 793914.937283
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 42, bytes: 62500
+recvive time: 27.207597
+bytes: 62500 and interval: 0.621715
+the throughput: 804227.291594
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 43, bytes: 62500
+recvive time: 27.842069
+bytes: 62500 and interval: 0.634472
+the throughput: 788056.705465
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 44, bytes: 62500
+recvive time: 28.468927
+bytes: 62500 and interval: 0.626857
+the throughput: 797629.586183
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 45, bytes: 62500
+recvive time: 29.090521
+bytes: 62500 and interval: 0.621595
+the throughput: 804382.549130
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 46, bytes: 62500
+recvive time: 29.924345
+bytes: 62500 and interval: 0.833824
+the throughput: 599646.849436
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 47, bytes: 62500
+recvive time: 30.557762
+bytes: 62500 and interval: 0.633416
+the throughput: 789370.514617
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 48, bytes: 62500
+recvive time: 31.188307
+bytes: 62500 and interval: 0.630545
+the throughput: 792964.823773
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 49, bytes: 62500
+recvive time: 31.819176
+bytes: 62500 and interval: 0.630870
+the throughput: 792556.823006
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 50, bytes: 62500
+recvive time: 32.445811
+bytes: 62500 and interval: 0.626635
+the throughput: 797912.930581
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 51, bytes: 62500
+recvive time: 33.075892
+bytes: 62500 and interval: 0.630081
+the throughput: 793548.840528
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 52, bytes: 62500
+recvive time: 33.705542
+bytes: 62500 and interval: 0.629650
+the throughput: 794091.460783
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 53, bytes: 62500
+recvive time: 34.343226
+bytes: 62500 and interval: 0.637684
+the throughput: 784087.282202
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 54, bytes: 62500
+recvive time: 34.977141
+bytes: 62500 and interval: 0.633915
+the throughput: 788749.544199
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 55, bytes: 62500
+recvive time: 35.604096
+bytes: 62500 and interval: 0.626955
+the throughput: 797505.672924
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 56, bytes: 62500
+recvive time: 36.230611
+bytes: 62500 and interval: 0.626515
+the throughput: 798065.759458
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 57, bytes: 62500
+recvive time: 36.858896
+bytes: 62500 and interval: 0.628285
+the throughput: 795816.670538
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 58, bytes: 62500
+recvive time: 37.484691
+bytes: 62500 and interval: 0.625795
+the throughput: 798983.963569
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 59, bytes: 62500
+recvive time: 38.116452
+bytes: 62500 and interval: 0.631761
+the throughput: 791438.608688
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 60, bytes: 62500
+recvive time: 38.745802
+bytes: 62500 and interval: 0.629350
+the throughput: 794469.989884
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 61, bytes: 62500
+recvive time: 39.373384
+bytes: 62500 and interval: 0.627581
+the throughput: 796709.483605
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 62, bytes: 62500
+recvive time: 39.999558
+bytes: 62500 and interval: 0.626175
+the throughput: 798499.092712
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 63, bytes: 62500
+recvive time: 40.628367
+bytes: 62500 and interval: 0.628808
+the throughput: 795155.069235
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 64, bytes: 62500
+recvive time: 41.258996
+bytes: 62500 and interval: 0.630630
+the throughput: 792858.447985
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 65, bytes: 62500
+recvive time: 41.884851
+bytes: 62500 and interval: 0.625855
+the throughput: 798907.365868
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 66, bytes: 62500
+recvive time: 42.515772
+bytes: 62500 and interval: 0.630921
+the throughput: 792492.319840
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 67, bytes: 62500
+recvive time: 43.141082
+bytes: 62500 and interval: 0.625310
+the throughput: 799602.894754
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 68, bytes: 62500
+recvive time: 43.779120
+bytes: 62500 and interval: 0.638037
+the throughput: 783653.065747
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 69, bytes: 62500
+recvive time: 44.405255
+bytes: 62500 and interval: 0.626135
+the throughput: 798550.104035
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 70, bytes: 62500
+recvive time: 45.031449
+bytes: 62500 and interval: 0.626195
+the throughput: 798473.589494
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 71, bytes: 62500
+recvive time: 45.668827
+bytes: 62500 and interval: 0.637377
+the throughput: 784464.754613
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 72, bytes: 62500
+recvive time: 46.298996
+bytes: 62500 and interval: 0.630170
+the throughput: 793437.204705
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 73, bytes: 62500
+recvive time: 46.925211
+bytes: 62500 and interval: 0.626215
+the throughput: 798448.087906
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 74, bytes: 62500
+recvive time: 47.555832
+bytes: 62500 and interval: 0.630621
+the throughput: 792869.325551
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 75, bytes: 62500
+recvive time: 48.185882
+bytes: 62500 and interval: 0.630050
+the throughput: 793587.316054
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 76, bytes: 62500
+recvive time: 48.803917
+bytes: 62500 and interval: 0.618035
+the throughput: 809015.948303
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 77, bytes: 62500
+recvive time: 49.438069
+bytes: 62500 and interval: 0.634152
+the throughput: 788454.367387
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 78, bytes: 62500
+recvive time: 50.079122
+bytes: 62500 and interval: 0.641053
+the throughput: 779966.585663
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 79, bytes: 62500
+recvive time: 50.708707
+bytes: 62500 and interval: 0.629584
+the throughput: 794174.840330
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 80, bytes: 62500
+recvive time: 51.338896
+bytes: 62500 and interval: 0.630190
+the throughput: 793412.023800
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 81, bytes: 62500
+recvive time: 51.965151
+bytes: 62500 and interval: 0.626255
+the throughput: 798397.089616
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 82, bytes: 62500
+recvive time: 52.596032
+bytes: 62500 and interval: 0.630881
+the throughput: 792542.566552
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 83, bytes: 62500
+recvive time: 53.228945
+bytes: 62500 and interval: 0.632913
+the throughput: 789997.931148
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 84, bytes: 62500
+recvive time: 53.863780
+bytes: 62500 and interval: 0.634835
+the throughput: 787606.491558
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 85, bytes: 62500
+recvive time: 54.491124
+bytes: 62500 and interval: 0.627344
+the throughput: 797010.582369
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 86, bytes: 62500
+recvive time: 55.124919
+bytes: 62500 and interval: 0.633795
+the throughput: 788898.882671
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 87, bytes: 62500
+recvive time: 55.751634
+bytes: 62500 and interval: 0.626715
+the throughput: 797811.077177
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 88, bytes: 62500
+recvive time: 56.388243
+bytes: 62500 and interval: 0.636609
+the throughput: 785411.473444
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 89, bytes: 62500
+recvive time: 57.019136
+bytes: 62500 and interval: 0.630894
+the throughput: 792526.624116
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 90, bytes: 62500
+recvive time: 57.645871
+bytes: 62500 and interval: 0.626735
+the throughput: 797785.617889
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 91, bytes: 62500
+recvive time: 58.276212
+bytes: 62500 and interval: 0.630341
+the throughput: 793221.521318
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 92, bytes: 62500
+recvive time: 58.901622
+bytes: 62500 and interval: 0.625410
+the throughput: 799475.042243
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 93, bytes: 62500
+recvive time: 59.738876
+bytes: 62500 and interval: 0.837254
+the throughput: 597190.425351
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 94, bytes: 62500
+recvive time: 60.379256
+bytes: 62500 and interval: 0.640380
+the throughput: 780786.408070
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 95, bytes: 62500
+recvive time: 61.005571
+bytes: 62500 and interval: 0.626315
+the throughput: 798320.604394
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 96, bytes: 62500
+recvive time: 61.638888
+bytes: 62500 and interval: 0.633317
+the throughput: 789494.118661
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 97, bytes: 62500
+recvive time: 62.269685
+bytes: 62500 and interval: 0.630797
+the throughput: 792647.968308
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 98, bytes: 62500
+recvive time: 62.895860
+bytes: 62500 and interval: 0.626175
+the throughput: 798499.092712
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 99, bytes: 62500
+recvive time: 63.530075
+bytes: 62500 and interval: 0.634215
+the throughput: 788376.445262
+---------request a new segment------------
+ask for segment, bitrate: 500000
+receive seq number: 100, bytes: 62500
+recvive time: 64.156949
+bytes: 62500 and interval: 0.626875
+the throughput: 797607.448358

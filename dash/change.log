@@ -1,0 +1,196 @@
+Enable fulltcp in wireless using DSDV routing
+
+Files Changed
+
+dsdv/dsdv.cc
+dsdv/dsdv.h
+tcl/mobility/dsdv.tcl
+
+dsdv.cc:
+**************
+****1009, 1015*****
+	/*
+	 * Add the IP Header
+	 */
+!	cmh->size() += IP_HDR_LEN;
+	iph->ttl_ = IP_DEF_TTL;
+    }
+****1009, 1017*****
+	/*
+	 * Add the IP Header
+	 */
+!	if (!fulltcp_) 
+!		cmh->size() += IP_HDR_LEN;
+	iph->ttl_ = IP_DEF_TTL;
+    }
+***************
+****1080, 1086****
+add 
+	fulltcp_(0)
+	bind ("fulltcp_", &fulltcp_);
+
+dsdv.h
+***************
+****137, 142****
+add
+	int fulltcp_;
+
+dsdv.tcl:
+***************
+****49, 54****
+add
+	Agent/DSDV set fulltcp_ 0
+
+============================================================
+
+tcl/lib/ns-default.tcl:	
+	add Application/DashClient/*, Application/DashServer/*
+	add Mac/802_11 set frame_loss_ratio_ 0.0
+tcp/tcp-full.h:
+	add (int)packet_loss_count_(0), 
+	    (int)packet_send_count_(0),
+	    (double)packet_loss_ratio(0)
+tcp/tcp-full.cc:
+	function: FullTcpAgent::timeout_action()
+		line 3:
+		{
+		    packet_loss_count_++;
+		    packet_loss_ratio_ = (double)packet_loss_count_ /
+		    	(double)(packet_loss_count_ + packet_send_count_);
+		}
+	function: FullTcpAgent::send_much(...)
+		line 36:
+		{
+		    packet_send_count_++;
+		}
+mac/mac-802_11.h:
+	add (int)frame_send_count_,
+	    (int)frame_loss_count_,
+	    (double)frame_loss_ratio_,
+
+	    (double)recv_time_;
+	    (double)send_time_;
+	    (double)delay_;
+mac/mac-802_11.cc:
+	function: Mac802_11::Mac802_11()
+		line 53:
+		{
+			/*
+			 * monitor frame loss
+			 */
+			frame_send_count_ = 0;
+			frame_loss_count_ = 0;
+			frame_loss_ratio_ = 0;
+			bind("frame_loss_ratio_", &frame_loss_ratio_);
+
+			/*
+			 * monitor mac rtt
+			 */
+			recv_time_ = 0;
+			send_time_ = 0;
+			delay_ = 0;
+			bind("delay_", &delay_);
+		}
+	function: Mac802_11::RetransmitDATA()
+		line 42:
+		{
+		    if (ch->ptype() == PT_ACK && netif_->node()->nodeid() == 5){
+		    	frame_loss_count_++;
+
+			if (frame_send_count_ + frame_loss_count_ == 0)
+			    frame_loss_ratio_ = 0;
+			else
+			    frame_loss_ratio_ = (double)frame_loss_count_ /  
+			   		(double)(frame_send_count_ + frame_loss_count_);
+			Tcl& tcl = Tcl::instance();
+			tcl.evalf("Mac/802_11 set frame_loss_ratio_ %f", frame_loss_ratio_);
+		    }
+
+		}
+	function: Mac802_11::sendDATA(Packet *p)
+		line 50:
+		{
+		    if(HDR_CMN(pktTx_)->ptype() == PT_ACK && netif_->node()->nodeid() == 5){
+			send_time_ = Scheduler::instance().clock();
+			frame_send_count_++;
+		    }
+		}
+	function: Mac802_11::recvACK(Packet *p)
+		line 2:
+		{
+		    if(HDR_CMN(pktTx_)->ptype() == PT_ACK && HDR_CMN(pktTx_)->next_hop() == 4194305) {
+			recv_time_ = Scheduler::instance().clock();
+			delay_ = recv_time_ - send_time_;
+		    }
+		}
+mac/wireless-phy.h:
+	add (double)noise_power_
+mac/wireless-phy.cc:
+	function: WirelessPhy::WirelessPhy()
+		line 32:
+		{
+		    noise_power_ = 7.96159e-14;
+		    bind("noise_power_", &noise_power_);
+		}
+	function: WirelessPhy::sendUp(Packet *p)
+		line 56:
+		{
+		    modulation_ = new BPSKM();
+		    modulation_ = set_param(22e6, 1e6, noise_power_);
+		}
+mobile/modulation.h
+	modify BPSK to BPSKM
+	in class modulation:
+	add (double) bw
+	    (double) br
+	    (double) np
+	add function:
+	    public void set_param(double bandwidth, double bit_rate, double noise_pr){
+		bw = bandwidth;
+		br = bit_rate;
+		np = noise_pr;
+	    };
+mobile/modulation.cc
+	modify BPSK to BPSKM
+	function: BPSKM::BitError(double Pr)
+		line 14:
+		modify 
+			if(Pe == 0.0)
+		to
+			if(Pe < 0.001)
+	        modify
+			x = (double)(((int)Random::uniform()) % 1000);
+		to
+			x = Random::uniform() * 1000;
+	function: BPSKM::ProbBitError(double Pr)
+		modify
+		{
+		    double SNR = Pr / np;
+		    double EN = log2(2 * bw * SNR / br);
+		    double pe = (1 - sqrt(EN/(1+EN)))/2;
+
+		    return pe;
+		}
+
+queue/errmodel.cc
+	in class ErrorModel
+	add:
+		double clp_;
+		double ulp_;
+	function: ErrorModel::CorruptPkt(Packet*)
+		modify
+		{
+		    double p = 1 - clp_;
+		    double q = ulp_ * (1-clp_)/(1-ulp_);
+		    if (state_ == 0 && b < p)
+			state_ = 1;
+		    else if (state_ == 1 && b < q)
+			state_ = 0;
+		}
+--------------------------------
+
+Jan.07, 2014
+
+dash/dash-exp.h dash/dash-exp.cc
+change the type of tran_flag_ from int
+to tran_t (unsigned int)

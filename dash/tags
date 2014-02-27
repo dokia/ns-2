@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DashAppClient	dash-exp.cc	/^DashAppClient::DashAppClient() :$/;"	f	class:DashAppClient
+DashAppClient	dash-exp.h	/^class DashAppClient : public Application {$/;"	c
+DashAppClientClass	dash-exp.cc	/^	DashAppClientClass() : TclClass("Application\/DashAppClient") {}$/;"	f	class:DashAppClientClass
+DashAppClientClass	dash-exp.cc	/^static class DashAppClientClass : public TclClass {$/;"	c	file:
+DashAppServer	dash-exp.cc	/^DashAppServer::DashAppServer() :$/;"	f	class:DashAppServer
+DashAppServer	dash-exp.h	/^class DashAppServer : public Application {$/;"	c
+DashAppServerClass	dash-exp.cc	/^	DashAppServerClass() : TclClass("Application\/DashAppServer") {}$/;"	f	class:DashAppServerClass
+DashAppServerClass	dash-exp.cc	/^static class DashAppServerClass : public TclClass {$/;"	c	file:
+backplay	dash-exp.cc	/^void DashAppClient::backplay() {$/;"	f	class:DashAppClient
+bitrate_	dash-exp.h	/^	int bitrate_;	\/\/ the bitrate in request$/;"	m	class:DashAppServer
+bitrate_list	dash-exp.h	/^	vector<int> bitrate_list;\/* start from the $/;"	m	class:DashAppServer
+bitrate_list	dash-exp.h	/^	vector<int> bitrate_list;\/\/ received from the server$/;"	m	class:DashAppClient
+buffer_	dash-exp.h	/^	double buffer_;	\/\/ buffer len in seconds$/;"	m	class:DashAppClient
+buffer_end_	dash-exp.h	/^	double buffer_end_; \/\/ location$/;"	m	class:DashAppClient
+buffer_start_	dash-exp.h	/^	double buffer_start_; \/\/ current buffer$/;"	m	class:DashAppClient
+bytes_	dash-exp.h	/^	int bytes_;$/;"	m	class:DashAppClient
+class_appclient_dash	dash-exp.cc	/^} class_appclient_dash;$/;"	v	typeref:class:DashAppClientClass	file:
+class_appserver_dash	dash-exp.cc	/^} class_appserver_dash;$/;"	v	typeref:class:DashAppServerClass	file:
+command	dash-exp.cc	/^int DashAppClient::command(int argc, const char*const* argv) {$/;"	f	class:DashAppClient
+command	dash-exp.cc	/^int DashAppServer::command(int argc, const char*const* argv) {$/;"	f	class:DashAppServer
+create	dash-exp.cc	/^	TclObject* create(int argc, const char*const* argv) {$/;"	f	class:DashAppClientClass
+create	dash-exp.cc	/^	TclObject* create(int argc, const char*const* argv) {$/;"	f	class:DashAppServerClass
+data_type_	dash-exp.h	/^	int data_type_; \/\/ 1 for media and 0 for mpd$/;"	m	class:DashAppClient
+data_type_	dash-exp.h	/^	int data_type_; \/\/ 1 for media and 0 for mpd$/;"	m	class:DashAppServer
+flag	dash-exp.h	/^	int flag; \/\/ 0 for in transmission$/;"	m	class:DashAppServer
+getAgent	dash-exp.h	/^	Agent* getAgent() {return agent_;}$/;"	f	class:DashAppClient
+init_mpd	dash-exp.cc	/^void DashAppServer::init_mpd() {$/;"	f	class:DashAppServer
+jumpto	dash-exp.cc	/^void DashAppClient::jumpto(double time) {$/;"	f	class:DashAppClient
+pauseplay	dash-exp.cc	/^void DashAppClient::pauseplay () {$/;"	f	class:DashAppClient
+play	wireless2.tcl	/^proc play {} {$/;"	p
+play_time_	dash-exp.h	/^	double play_time_; \/\/currrent video play time$/;"	m	class:DashAppClient
+process_mpd	dash-exp.cc	/^void DashAppClient::process_mpd() {$/;"	f	class:DashAppClient
+qoe_cal	dash-exp.cc	/^int DashAppClient::qoe_cal(double interval, int nbytes) {$/;"	f	class:DashAppClient
+readBuffer	dash-exp.cc	/^void DashAppClient::readBuffer (double interval) {$/;"	f	class:DashAppClient
+record	wireless2.tcl	/^proc record {} {$/;"	p
+recv	dash-exp.cc	/^void DashAppClient::recv(int nbytes) {$/;"	f	class:DashAppClient
+recv	dash-exp.cc	/^void DashAppServer::recv(int nbytes) {$/;"	f	class:DashAppServer
+recv_time	dash-exp.h	/^	double recv_time;$/;"	m	class:DashAppClient
+reqBytes_	dash-exp.h	/^	int reqBytes_;$/;"	m	class:DashAppClient
+request_first_seg	dash-exp.cc	/^void DashAppClient::request_first_seg() {$/;"	f	class:DashAppClient
+request_mpd	dash-exp.cc	/^void DashAppClient::request_mpd() {$/;"	f	class:DashAppClient
+request_next_seg	dash-exp.cc	/^void DashAppClient::request_next_seg(int seqno, int bitrate_) {$/;"	f	class:DashAppClient
+revBytes_	dash-exp.h	/^	int revBytes_;$/;"	m	class:DashAppClient
+seg_len_	dash-exp.h	/^	int seg_len_;\/\/ length of each segment (in sec)$/;"	m	class:DashAppClient
+seg_len_	dash-exp.h	/^	int seg_len_;\/\/ length of each segment (in sec)$/;"	m	class:DashAppServer
+seg_num_	dash-exp.h	/^	int seg_num_;$/;"	m	class:DashAppClient
+seg_num_	dash-exp.h	/^	int seg_num_;$/;"	m	class:DashAppServer
+send_mpd	dash-exp.cc	/^void DashAppServer::send_mpd() {$/;"	f	class:DashAppServer
+send_seg	dash-exp.cc	/^void DashAppServer::send_seg(int bitrate_) {$/;"	f	class:DashAppServer
+send_time	dash-exp.h	/^	double send_time;$/;"	m	class:DashAppClient
+seqno_	dash-exp.h	/^	int seqno_;	\/* the segment sequence number $/;"	m	class:DashAppClient
+seqno_	dash-exp.h	/^	int seqno_;	\/\/ the media segment segment in request$/;"	m	class:DashAppServer
+start	dash-exp.cc	/^void DashAppClient::start() {$/;"	f	class:DashAppClient
+stop	wireless2.tcl	/^proc stop {} {$/;"	p
+threshold_	dash-exp.h	/^	double threshold_; \/\/ for buffer read;$/;"	m	class:DashAppClient
+tran_flag_	dash-exp.h	/^	int tran_flag_; \/\/ 0 for transmitting begin, 1 for play pause, $/;"	m	class:DashAppClient
